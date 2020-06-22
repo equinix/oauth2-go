@@ -105,7 +105,7 @@ func (c *tokenSource) Token() (*oauth2.Token, error) {
 		Post(c.conf.BaseURL + tokenPath)
 
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("oauth2: failed to fetch token: %s", err)
 	}
 	if resp.IsError() {
 		respError := resp.Error().(*tokenError)
@@ -113,7 +113,7 @@ func (c *tokenSource) Token() (*oauth2.Token, error) {
 	}
 	token := oauth2.Token{
 		AccessToken:  result.AccessToken,
-		TokenType:    result.TokenType,
+		TokenType:    "Bearer",
 		RefreshToken: result.RefreshToken}
 
 	timeout, err := strconv.Atoi(result.TokenTimeout)
