@@ -1,0 +1,7 @@
+{
+    "errorDomain": "apps-fqa",
+    "errorTitle": "Login Failure",
+    "errorCode": "S1006",
+    "developerMessage": "Login Failure, please try again",
+    "errorMessage": "Login Failure, please try again."
+}
