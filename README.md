@@ -3,7 +3,12 @@ Equinix oAuth2 Go client
 Go implementation of oAuth2 enabbled HTTP client for interactions with Equinix APIs.
 Module implementes Equinix specific client credentials grant type with custom `TokenSource` from standard Go oauth2 module.
 
-* Contact us : https://developer.equinix.com/contact-us
+[![Build Status](https://travis-ci.com/equinix/oauth2-go.svg?branch=master)](https://travis-ci.com/github/equinix/oauth2-go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/equinix/oauth2-go)](https://goreportcard.com/report/github.com/equinix/oauth2-go)
+[![GoDoc](https://godoc.org/github.com/equinix/oauth2-go?status.svg)](https://godoc.org/github.com/equinix/oauth2-go)
+![GitHub](https://img.shields.io/github/license/equinix/oauth2-go)
+
+---
 
 Requirements
 ----------------
